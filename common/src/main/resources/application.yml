@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/haruharu?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/

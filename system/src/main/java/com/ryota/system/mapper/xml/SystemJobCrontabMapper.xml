@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ryota.system.mapper.SystemJobCrontabMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ryota.system.entity.SystemJobCrontab">
+        <id column="ID" property="id" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="CRONTAB_ID" property="crontabId" />
+        <result column="DESCRIPTION" property="description" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, JOB_ID, CRONTAB_ID, DESCRIPTION
+    </sql>
+    <select id="getListByParam" resultType="com.ryota.system.vo.SystemJobCronVO">
+        SELECT
+        a1.id,
+        a1.job_id,
+        a1.crontab_id,
+        a1.description as `description`,
+        `STATUS`,
+        a2.INTERFACE_URL as interfaceUrl,
+        a2.DESCRIPTION as interfaceUrlDesc,
+        a3.crontab as cron,
+        a3.DESCRIPTION as cronDesc,
+        a2.system_code as systemCode,
+        a2.create_time as createTime,
+        a2.create_user as createUser
+        FROM
+        system_job_crontab a1,
+        system_job a2,
+        system_crontab a3
+        WHERE
+        a1.job_id = a2.id
+        AND a1.crontab_id = a3.id
+        <if test=" interfaceUrl !=null and interfaceUrl !=''">
+            and a2.INTERFACE_URL like concat('%', #{interfaceUrl},'%')
+        </if>
+        <if test = "status != null and status !=''">
+            and `STATUS` = #{status}
+        </if>
+    </select>
+
+</mapper>

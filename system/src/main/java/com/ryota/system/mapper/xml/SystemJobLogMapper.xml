@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ryota.system.mapper.SystemJobLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ryota.system.entity.SystemJobLog">
+        <id column="ID" property="id" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="EXEC_TIME" property="execTime" />
+        <result column="RESULT_TYPE" property="resultType" />
+        <result column="RESULT" property="result" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, JOB_ID, EXEC_TIME, RESULT_TYPE, RESULT
+    </sql>
+
+</mapper>
