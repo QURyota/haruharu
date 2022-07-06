@@ -4,9 +4,9 @@ spring:
   application:
     name: system-client
   redis:
-    host: 10.72.66.39
-    port: 6378
-    password: pAssw0r_d
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
     database: 1
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
