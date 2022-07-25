@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/4 10:42
  */
 @SpringBootApplication

@@ -11,7 +11,7 @@ package sync;
  * 实现:1.创建资源类,定义属性和操作方法
  *     2.创建多个线程,调用资源类中的方法
  *
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/7/9 0:19
  */
 public class SaleTicket {

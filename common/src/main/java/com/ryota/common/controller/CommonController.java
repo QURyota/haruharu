@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/4 11:34
  */
 @RestController("commonController")

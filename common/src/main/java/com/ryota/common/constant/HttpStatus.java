@@ -1,7 +1,7 @@
 package com.ryota.common.constant;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/4 11:02
  */
 public class HttpStatus

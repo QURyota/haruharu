@@ -3,7 +3,7 @@ package lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/7/9 10:10
  * * 1. 创建资源类,在资源类创建属性和操作方法
  * * 2. 创建多个线程,调用资源类的操作方法

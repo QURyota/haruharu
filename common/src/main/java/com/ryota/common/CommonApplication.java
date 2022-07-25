@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/4 11:28
  */
 @SpringBootApplication

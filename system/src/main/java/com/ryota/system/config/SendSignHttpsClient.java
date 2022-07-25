@@ -1,7 +1,7 @@
 package com.ryota.system.config;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/4 10:55
  */
 

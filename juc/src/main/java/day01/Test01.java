@@ -1,7 +1,7 @@
 package day01;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/7/7 21:19
  */
 public class Test01 {

@@ -4,7 +4,7 @@ import org.quartz.CronExpression;
 import java.text.ParseException;
 
 /**
- * @Author quyifan
+ * @Author Ryota
  * @create 2022/6/5 9:02
  */
 public class CronUtils {
